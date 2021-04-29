@@ -73,12 +73,12 @@ configure(testProjects) {
   // standardise the test deps here
   dependencies {
     testImplementation 'junit:junit:4.12'
-    testImplementation 'org.mockito:mockito-core:2.22.0'
-    testImplementation "org.hamcrest:hamcrest:2.1"
-    testImplementation "org.junit.jupiter:junit-jupiter:5.5.1"
-    testImplementation "org.junit.platform:junit-platform-runner:1.6.2"
-    testRuntime "org.junit.jupiter:junit-jupiter-engine:5.5.1"
-    testRuntime "org.junit.vintage:junit-vintage-engine:5.5.1"
+    testImplementation 'org.mockito:mockito-core:3.9.0'
+    testImplementation "org.hamcrest:hamcrest:2.2"
+    testImplementation "org.junit.jupiter:junit-jupiter:5.7.1"
+    testImplementation "org.junit.platform:junit-platform-runner:1.7.1"
+    testRuntime "org.junit.jupiter:junit-jupiter-engine:5.7.1"
+    testRuntime "org.junit.vintage:junit-vintage-engine:5.7.1"
   }
 
   if (JavaVersion.current() < JavaVersion.VERSION_1_9) {
