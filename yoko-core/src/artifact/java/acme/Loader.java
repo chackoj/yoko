@@ -58,7 +58,7 @@ public enum Loader {
         return new URLClassLoader(urls, parentLoader);
     }
 
-    public <T> Class<? extends T> loadClass(String className) throws ClassNotFoundException {
+    public <T> Class<? extends T> loadClass(String className) {
         try {
             return (Class<? extends T>) loader.loadClass(className);
         } catch (ClassNotFoundException cnfe) {

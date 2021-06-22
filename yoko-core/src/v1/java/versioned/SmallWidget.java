@@ -14,11 +14,15 @@ public class SmallWidget extends NonSerializableSuper implements Widget {
 
     @Override
     public Widget validateAndReplace() {
+        validateInV1Context();
+        return new SmallWidget();
+    }
+
+    private void validateInV1Context() {
         // check the v2 was transmitted correctly
         assertThat(a, endsWith("v2"));
         assertThat(b, nullValue());
         assertThat(c, nullValue());
-        return new SmallWidget();
     }
 
     @Override
